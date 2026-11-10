@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% block content %}
+<div class="grid2"><div class="panel"><h3>New expense</h3>
+<div class="row"><div><label>Amount (Rs.)</label><input id="amount" type="number" min="0" step="0.01"></div><div><label>Date</label><input id="date" type="date"></div></div>
+<label>Description (e.g. zomato order upi)</label><input id="description" autocomplete="off">
+<div class="row"><div><label>Time (optional)</label><input id="time" type="time"></div><div><label>Payment mode</label><select id="mode"><option>UPI</option><option>Card</option><option>Cash</option><option>Net Banking</option></select></div></div>
+<label>AI-predicted category</label><div><span id="predBox" class="pill">type a description...</span></div>
+<label>Override category (optional)</label><select id="category"><option value="">Use AI prediction</option>{% for c in categories %}<option>{{ c }}</option>{% endfor %}</select>
+<button id="saveBtn">SAVE EXPENSE</button><div id="msg" class="msg"></div></div>
+<div class="panel"><h3>Result</h3><div id="result" class="muted">Save an expense to see the predicted category, anomaly check and budget status.</div></div></div>
+{% endblock %}

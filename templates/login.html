@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login - AI Expense Tracker</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head><body data-page="login">
+<div class="auth"><h1>AI Expense Tracker</h1><p>Sign in to manage your budget</p>
+<label>Email</label><input id="email" type="email" placeholder="demo@example.com"><label>Password</label><input id="password" type="password" placeholder="demo1234">
+<button id="loginBtn" style="width:100%">LOGIN</button><div id="msg" class="msg err"></div><p style="margin-top:14px">New user? <a href="/register">Register here</a></p></div>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script></body></html>

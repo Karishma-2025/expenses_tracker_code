@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Register - AI Expense Tracker</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head><body data-page="register">
+<div class="auth"><h1>Create account</h1><p>Your monthly income is used to recommend a budget</p>
+<label>Name</label><input id="name"><label>Email</label><input id="email" type="email"><label>Password (min 6 characters)</label><input id="password" type="password">
+<label>Monthly income (Rs.)</label><input id="income" type="number" min="0" value="40000"><button id="regBtn" style="width:100%">REGISTER</button>
+<div id="msg" class="msg err"></div><p style="margin-top:14px">Already registered? <a href="/login">Login</a></p></div>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script></body></html>

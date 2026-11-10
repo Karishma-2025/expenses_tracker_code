@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block content %}
+<div class="panel"><div class="row"><div><label>Month</label><input id="month" type="month"></div>
+<div><label>Upload bank / UPI statement (CSV: date, description, amount)</label><input id="file" type="file" accept=".csv"></div></div>
+<button class="green" id="uploadBtn">UPLOAD CSV</button> <button class="grey" id="retrainBtn">Re-train with my corrections</button><div id="msg" class="msg"></div></div>
+<div class="panel"><table><thead><tr><th>Date</th><th>Description</th><th>Category (AI - editable)</th><th>Amount</th><th>Status</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+<script>window.CATEGORIES={{ categories|tojson }};</script>{% endblock %}

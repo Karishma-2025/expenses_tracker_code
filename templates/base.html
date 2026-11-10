@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title }} - AI Expense Tracker</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% block head %}{% endblock %}</head>
+<body data-page="{{ page }}"><div class="layout">
+<nav class="sidebar"><h1>ExpenseAI</h1>
+{% for ep, label in [('dashboard_page','Dashboard'),('add_page','Add Expense'),('transactions_page','Transactions'),('budget_page','Budget'),('forecast_page','Forecast'),('alerts_page','Alerts')] %}
+<a href="{{ url_for(ep) }}" class="{{ 'active' if page == ep }}">{{ label }}</a>{% endfor %}
+<div class="spacer"></div><div class="who">Signed in as<br><b>{{ user_name }}</b></div>
+<a href="/api/export" download="my_expense_data.json">Export my data</a><a href="{{ url_for('logout_page') }}">Logout</a></nav>
+<main><h2>{{ title }}</h2>{% block content %}{% endblock %}</main></div>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>{% block scripts %}{% endblock %}</body></html>

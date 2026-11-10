@@ -1,0 +1,16 @@
+date,description,amount,time,mode
+2026-11-01,swiggy dinner upi,420,20:15,UPI
+2026-11-02,uber ride,260,09:05,UPI
+2026-11-03,electricity bill,1850,11:30,Net Banking
+2026-11-03,bigbasket order,1840,18:00,Card
+2026-11-05,netflix subscription,649,00:10,Card
+2026-11-06,apollo pharmacy,380,17:45,UPI
+2026-11-07,udemy course,499,21:00,Card
+2026-11-08,amazon purchase,1299,13:20,Card
+2026-11-09,zomato order,350,21:30,UPI
+2026-11-10,jio recharge,299,08:40,UPI
+2026-11-11,metro card recharge,500,08:10,UPI
+2026-11-12,dmart groceries,2350,19:10,Card
+2026-11-13,pvr cinemas,780,19:40,Card
+2026-11-14,gym membership,1500,07:00,UPI
+2026-11-15,myntra clothes,2199,15:25,Card

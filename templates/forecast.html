@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block head %}<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>{% endblock %}
+{% block content %}<div class="panel"><label>Months ahead</label><select id="n" style="max-width:160px"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option selected>6</option></select><div id="msg" class="msg"></div></div>
+<div class="panel"><h3>Total spending: history and forecast</h3><canvas id="chart" height="110"></canvas></div>
+<div class="panel"><h3>Category-wise forecast (Rs.)</h3><div style="overflow-x:auto"><table><thead id="head"></thead><tbody id="rows"></tbody></table></div></div>{% endblock %}
